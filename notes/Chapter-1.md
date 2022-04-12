@@ -36,3 +36,10 @@ The arguments are:
 foo
 bar
 ```
+
+## Links
+
+- [Crafting Interpreters: Introduction](https://craftinginterpreters.com/introduction.html)
+- [Doubly linked list Wiki article](https://en.wikipedia.org/wiki/Doubly_linked_list) Wiki
+- [Implementing Doubly Linked Lists in Haskell](https://www.reddit.com/r/haskell/comments/2nepr0/implementing_doubly_linked_lists_in_haskell/) Reddit post
+ - [how to implement doubly linked lists](https://stackoverflow.com/questions/10386616/how-to-implement-doubly-linked-lists) stackoverflow answer
