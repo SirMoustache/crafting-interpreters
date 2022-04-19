@@ -72,6 +72,38 @@ Importing List functions
 import Data.List
 ```
 
+Haskell Functions
+
+Guards
+
+```haskell
+factorial :: Int -> Int
+factorial n
+  | n == 0 = 1
+  | n > 0 = n * factorial (n - 1)
+  | otherwise = error "Factorial of negative number"
+```
+
+Accumulator tail recursion
+
+```haskell
+factorial :: Int -> Int
+factorial n = factorial' n 1
+  where
+    factorial' 0 acc = acc
+    factorial' n acc = factorial' (n - 1) (n * acc)
+```
+
+Pattern Matching
+
+```haskell
+-- Pattern matching is a way to match a value against a pattern
+-- and extract a value from the pattern if the pattern matches
+isZero :: Int -> Bool
+isZero 0 = True
+isZero _ = False
+```
+
 ## Links
 
 - [Crafting Interpreters: Introduction](https://craftinginterpreters.com/introduction.html)
@@ -79,3 +111,7 @@ import Data.List
 - [Implementing Doubly Linked Lists in Haskell](https://www.reddit.com/r/haskell/comments/2nepr0/implementing_doubly_linked_lists_in_haskell/) Reddit post
 - [how to implement doubly linked lists](https://stackoverflow.com/questions/10386616/how-to-implement-doubly-linked-lists) stackoverflow answer
 - [Hello, World!](https://riptutorial.com/haskell#hello--world-) in Haskell
+
+```
+
+```
