@@ -104,6 +104,18 @@ isZero 0 = True
 isZero _ = False
 ```
 
+Lambda functions
+
+```haskell
+-- It is a function that is defined in terms of a single expression
+-- The expression is the body of the function
+-- The expression is evaluated lazily
+squareAll :: [Int] -> [Int]
+squareAll [] = []
+squareAll (xs) = map (\x -> x * x) xs
+-- \x -> x * x
+```
+
 ## Links
 
 - [Crafting Interpreters: Introduction](https://craftinginterpreters.com/introduction.html)
@@ -111,7 +123,3 @@ isZero _ = False
 - [Implementing Doubly Linked Lists in Haskell](https://www.reddit.com/r/haskell/comments/2nepr0/implementing_doubly_linked_lists_in_haskell/) Reddit post
 - [how to implement doubly linked lists](https://stackoverflow.com/questions/10386616/how-to-implement-doubly-linked-lists) stackoverflow answer
 - [Hello, World!](https://riptutorial.com/haskell#hello--world-) in Haskell
-
-```
-
-```

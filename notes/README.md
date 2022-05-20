@@ -1,1 +1,2 @@
-- [Chapter 1: Introduction](./chapter-1.md)
+- [Chapter 1: Introduction](./Chapter-1.md)
+- [Chapter 2: A Map of the Territory](./Chapter-2.md)
